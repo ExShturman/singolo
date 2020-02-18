@@ -1,6 +1,8 @@
 * {
-     box-sizing: border-box; /* внешняя граница блока с отступами на весь сайт */
-} */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 @font-face{
     font-family: "Lato";
@@ -11,23 +13,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    width: 1022px;
-}
-
-
-h1 {
- 
-}
-
-header {
-    position: absolute;
-    color: white;
-    height: 98px;
-    background-color: #2d303a;
-}
-
-footer{
+    width: 1020px;
 }
 
 li {
@@ -44,21 +30,44 @@ ul {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 6px;
-   
 }
+
+.header {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-family: "Lato";
+    font-weight: 700;
+    margin-top: 42px;
+    margin-left: 41px;
+}
+
+.nav {
+
+
+}
+
+.header-bottom {
+    height: 6px;
+    background-color: #323746;
+    }
+
+
+
+
+
 .box{
     border: 3px solid black;
     height: 300px;
     margin: auto;
 }
 
-.header-bottom {
-    height: 6px;
-    background-color: #f80606;
-    position: absolute;
-    top: 98px;
-}
+
 
 .slider {
     height: 600px;
