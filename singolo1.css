@@ -1,0 +1,67 @@
+* {
+     box-sizing: border-box; /* внешняя граница блока с отступами на весь сайт */
+} */
+
+@font-face{
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Black.ttf");
+    src: url("assets/fonts/Lato-Regular.ttf");
+    src: url("assets/fonts/Lato-Bold.ttf");
+    src: url("assets/fonts/Lato-Light.ttf");
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 1022px;
+}
+
+
+h1 {
+ 
+}
+
+header {
+    position: absolute;
+    color: white;
+    height: 98px;
+    background-color: #2d303a;
+}
+
+footer{
+}
+
+li {
+    display: inline;
+    margin: 0px;
+    padding: 8px;
+}
+
+ul {
+    position: absolute;
+    left: 610px;
+    top: 48px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 6px;
+   
+}
+.box{
+    border: 3px solid black;
+    height: 300px;
+    margin: auto;
+}
+
+.header-bottom {
+    height: 6px;
+    background-color: #f80606;
+    position: absolute;
+    top: 98px;
+}
+
+.slider {
+    height: 600px;
+    background-color: #f06c64;
+}
+
