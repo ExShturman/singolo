@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 @font-face{
@@ -12,9 +13,6 @@
     src: url("assets/fonts/Lato-Light.ttf");
 }
 
-body {
-    width: 1020px;
-}
 
 li {
     display: inline;
@@ -22,34 +20,33 @@ li {
     padding: 8px;
 }
 
-ul {
-    position: absolute;
-    left: 610px;
-    top: 48px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-}
 
 .header {
-    width: 1020px;
+    display: block;
     height: 89px;
     background-color: #2d303a;
 }
 
 .logo {
-    font-size: 25px;
+    display: inline-block;
+    position: absolute;
+    font-size: 18pt;
     color: white;
     font-family: "Lato";
     font-weight: 700;
-    margin-top: 42px;
     margin-left: 41px;
+    margin-top: 41px;
 }
 
 .nav {
-
-
+    display: inline-block;
+    color: white;
+    font-size: 10pt;
+    font-family: "Lato";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 610px;    
+    margin-top: 48px;
 }
 
 .header-bottom {
@@ -58,19 +55,12 @@ ul {
     }
 
 
-
-
-
-.box{
-    border: 3px solid black;
-    height: 300px;
-    margin: auto;
-}
-
-
-
 .slider {
     height: 600px;
     background-color: #f06c64;
 }
 
+.slider-bottom {
+    background-color: #EA676B;
+    height: 18px;
+}
