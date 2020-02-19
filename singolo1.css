@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-    width: 1020px;
 }
 
 @font-face{
@@ -13,6 +12,9 @@
     src: url("assets/fonts/Lato-Light.ttf");
 }
 
+body {
+    width: 1020px;
+}
 
 li {
     display: inline;
@@ -60,7 +62,58 @@ li {
     background-color: #f06c64;
 }
 
+.slider-arrow-left img {
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    margin-left: 43px;
+    margin-top: 298px;
+}
+
+.slider-arrow-right img {
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    margin-left: 965px;
+    margin-top: 298px;
+}
+
+.slider-iphone-vertical img {
+    position: absolute;
+    margin-left: 111px;
+    margin-top: 69px;
+    height: 461px;
+    width: 218px;
+}
+
+.slider-iphone-horizontal img {
+    position: absolute;
+    width: 461px;
+    height: 218px;
+    margin-left: 425px;
+    margin-top: 180px;
+}
+
 .slider-bottom {
     background-color: #EA676B;
-    height: 18px;
+    height: 8px;
+}
+
+
+
+
+
+
+
+
+
+.services {
+    min-height: 499px;
+    background-color: #F2F2F2;
+}
+
+
+.services-bottom {
+    background-color: white;
+    height: 8px;
 }
