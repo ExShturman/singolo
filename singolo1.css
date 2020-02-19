@@ -18,10 +18,13 @@ body {
 
 li {
     display: inline;
-    margin: 0px;
-    padding: 8px;
+    padding-right: 27px;
+  
 }
 
+li:hover {
+    color: green;
+}
 
 .header {
     display: block;
@@ -30,26 +33,31 @@ li {
 }
 
 .logo {
+    cursor: pointer;
     display: inline-block;
     position: absolute;
     font-size: 18pt;
     color: white;
     font-family: "Lato";
     font-weight: 700;
-    margin-left: 41px;
-    margin-top: 41px;
+    margin-left: 40px;
+    margin-top: 30px; 
+    
 }
 
 .nav {
+    cursor: pointer;
     display: inline-block;
     color: white;
-    font-size: 10pt;
+    font-size: 9pt;
     font-family: "Lato";
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 610px;    
-    margin-top: 48px;
+    margin-left: 609px;    
+    margin-top: 42px;
 }
+
+
 
 .header-bottom {
     height: 6px;
@@ -58,45 +66,51 @@ li {
 
 
 .slider {
-    height: 600px;
+    height: 594px;
     background-color: #f06c64;
 }
 
 .slider-arrow-left img {
+    cursor: pointer;
     position: absolute;
     width: 16px;
     height: 27px;
     margin-left: 43px;
-    margin-top: 298px;
+    margin-top: 281px;
+}
+
+.slider-arrow-left: hover {
+
 }
 
 .slider-arrow-right img {
+    cursor: pointer;
     position: absolute;
     width: 16px;
     height: 27px;
     margin-left: 965px;
-    margin-top: 298px;
+    margin-top: 281px;
 }
 
 .slider-iphone-vertical img {
     position: absolute;
-    margin-left: 111px;
-    margin-top: 69px;
-    height: 461px;
-    width: 218px;
+    margin-left: 112px;
+    margin-top: 53px;
+    height: 483px;
+    width: 240px;
 }
 
 .slider-iphone-horizontal img {
     position: absolute;
-    width: 461px;
-    height: 218px;
+    width: 484px;
+    height: 240px;
     margin-left: 425px;
-    margin-top: 180px;
+    margin-top: 174px;
 }
 
 .slider-bottom {
     background-color: #EA676B;
-    height: 8px;
+    height: 6px;
 }
 
 
@@ -108,12 +122,12 @@ li {
 
 
 .services {
-    min-height: 499px;
+    min-height: 494px;
     background-color: #F2F2F2;
 }
 
 
 .services-bottom {
     background-color: white;
-    height: 8px;
+    height: 6px;
 }
