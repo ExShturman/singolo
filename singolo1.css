@@ -4,6 +4,7 @@
     margin: 0 auto;
 }
 
+
 @font-face{
     font-family: "Lato";
     src: url("assets/fonts/Lato-Black.ttf");
@@ -12,25 +13,29 @@
     src: url("assets/fonts/Lato-Light.ttf");
 }
 
+
 body {
     width: 1020px;
 }
 
+
 li {
     display: inline;
     padding-right: 27px;
-  
 }
+
 
 li:hover {
     color: green;
 }
+
 
 .header {
     display: block;
     height: 89px;
     background-color: #2d303a;
 }
+
 
 .logo {
     cursor: pointer;
@@ -45,6 +50,7 @@ li:hover {
     
 }
 
+
 .nav {
     cursor: pointer;
     display: inline-block;
@@ -58,17 +64,17 @@ li:hover {
 }
 
 
-
 .header-bottom {
     height: 6px;
     background-color: #323746;
-    }
+}
 
 
 .slider {
     height: 594px;
     background-color: #f06c64;
 }
+
 
 .slider-arrow-left img {
     cursor: pointer;
@@ -79,6 +85,7 @@ li:hover {
     margin-top: 281px;
 }
 
+
 .slider-arrow-right img {
     cursor: pointer;
     position: absolute;
@@ -88,6 +95,7 @@ li:hover {
     margin-top: 281px;
 }
 
+
 .slider-iphone-vertical img {
     position: absolute;
     margin-left: 112px;
@@ -96,6 +104,7 @@ li:hover {
     width: 240px;
 }
 
+
 .slider-iphone-horizontal img {
     position: absolute;
     width: 484px;
@@ -103,6 +112,7 @@ li:hover {
     margin-left: 425px;
     margin-top: 174px;
 }
+
 
 .slider-bottom {
     background-color: #EA676B;
@@ -115,7 +125,13 @@ li:hover {
     background-color: #F2F2F2;
 }
 
-.services h1 {
+
+.services-text {
+    display: block;
+}
+
+
+.services-text h1 {
     display: inline-block;
     margin-left: 42px;
     margin-top: 60px;
@@ -126,7 +142,7 @@ li:hover {
     color: #666D89;
 }
 
-.services p {
+.services-text p {
     display: inline-block;
     margin-top: 19px;
     margin-left: 40px;
@@ -138,54 +154,82 @@ li:hover {
     line-height: 30px;
     color: #767E9E;
    font-stretch: condensed;
-
 }
 
 
 .box-container {
-
+    display: block;
+    margin-top: 44px;
+    margin-left: 22px;
 }
+
 
 .box {
-
-
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    max-height: 87px;
+    margin-left: 19px;
+    margin-bottom: 37px;
 }
 
+
 .box-ico {
-    width: 56px;
-    height: 56px;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: inline-block;
+    width: 61px;
+    height: 61px;
     border-color: #666d89;
     border-style: solid;
     border-radius: 50%;
     border-width: 2px;
-    margin: 41px;
+    z-index: 5; 
+    margin-left: 0px;
+    margin-top: 0px;
+    float: left;
+}
+
+
+.box-ico .box-img {
+    /* display: inline; 
+    position: absolute; */
+    /* width: 32px;
+    height: 32px; */
+    /* margin-left: 18px;*/
+    display: inline-block;
+    margin-top: 25%; 
+    margin-left: 25%;
     z-index: 10;
+    
 }
 
-.box-img-bubble {
-    background-image: url(/assets/img/services/bubble.png);
+
+.box-text {
+    display: inline-block;
+    width: 218px;
+    margin-left: 18px;
 }
 
-.box-img-bulb {
-    background-image: url(/assets/img/services/bulb.png);
+
+.box-text h2 {
+    font-size: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    line-height: 30px;
+    margin-top: -7px;
+    margin-bottom: 4px;
 }
 
-.box-img-ellipse {
-    background-image: url(/assets/img/services/ellipse.png);
-}
 
-.box-img-heart {
-    background-image: url(/assets/img/services/heart.png);
-}
-
-.box-img-pen {
-    background-image: url(/assets/img/services/pen.png);
-}
-
-.box-img-phone {
-    background-image: url(/assets/img/services/phone.png);
+.box-text p {
+    color: #767e9e;
+    font-family: "Lato";
+    font-size: 12px;
+    line-height: 21px;
+    max-height: 136px;
+    overflow: hidden;
+    text-align: justify;
 }
 
 
