@@ -30,59 +30,112 @@
 
 .singolo2 {
     width: 1020px;
-    background: #2D303A;
-}
-
-.wrapper{
-    width: 940px;
-    margin-left: 41px;
-    margin-right: auto;
-}
-
-.portfolio {
-    max-height: 866px;
+   
     
 }
 
-.promo{
-display: inline-block;
+
+
+.wrapper{
+    width: 940px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
+.portfolio {
+    height: 864px;
+    background: #2D303A;
+}
+
+.promo {
+    display: inline-block;
+}
+
 .promo h1 {
-    margin-left: 42px;
-    margin-top: 69px;
-    font-family: Lato;
+    margin-top: 61px;
+    font-family: Lato-Black;
     font-style: normal;
     font-weight: 900;
-    font-size: 29px;
-    line-height: 18px;
+    font-size: 30px;
+    /* line-height: 18px; */
     color: #666D89;
-    }
+}
+
 .promo p {
-    margin-left: 42px;
-    margin-top: 118px;
+    margin-top: 22px;
     color: #767E9E;
-    font-family: Lato;
+    font-family: Lato-Light;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 30px;
-    }
+    /* line-height: 30px; */
+    color: #767E9E;
+    letter-spacing: -0.25px;
+}
+
+.portfolio__buttons {
+    margin-top: 14px;
+    
+}
+
+.portfolio__buttons .button_gray {
+    cursor: pointer;
+    font-family: Lato-Regular;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #666D89;
+    margin-left: 7px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #767E9E;
+    text-align: center;
+    padding: 3px;
+}
+
+.portfolio__buttons .button_white {
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: Lato-Regular;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #666D89;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+.imageboard {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 601px;
+}
+
+.imageboard__image {
+    width: 220px;
+    height: 187px;
+    margin: 0;
+}
+
 
 .portfolio_bottom {
     height: 6px;
     background: #323746;
 }
 
-.imageboard {
-display: flex;
-justify-content: space-between;
-align-items: stretch;
-flex-wrap: wrap;
-overflow: hidden;
-height: 601px;
+.about-us {
+height: 728px;
+background-color: #f2f2f2;
 }
 
-.imageboard__image {
-    width: 220px;
-    height: 187px;
+.about-us__bottom {
+    height: 6px;
+    background-color: white;
 }
