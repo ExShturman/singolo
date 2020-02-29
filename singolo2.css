@@ -30,19 +30,15 @@
 
 .singolo2 {
     width: 1020px;
-   
-    
 }
-
-
 
 .wrapper{
     width: 940px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: auto;
 }
 
-.portfolio {
+.singolo2 .portfolio {
     height: 864px;
     background: #2D303A;
 }
@@ -57,7 +53,6 @@
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
-    /* line-height: 18px; */
     color: #666D89;
 }
 
@@ -68,7 +63,6 @@
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    /* line-height: 30px; */
     color: #767E9E;
     letter-spacing: -0.25px;
 }
@@ -130,9 +124,112 @@
     background: #323746;
 }
 
-.about-us {
-height: 728px;
-background-color: #f2f2f2;
+section .about-us {
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.about-us__description h2 {
+    display: inline-block;
+    margin-top: 59px;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    letter-spacing: 1px;
+    color: #666D89;
+}
+
+.about-us__description p {
+    display: inline-block;
+    margin-top: 20px;  
+    font-family: Lato-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767E9E;
+}
+
+
+.biography {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* align-content: center; */
+    flex-wrap: wrap;
+}
+
+
+.biography__container {
+    height: 443px;
+    width: 300px;
+
+}
+
+.biography__image {
+    width: 300px;
+    height: 300px;
+}
+
+.biography__name {
+    margin-top: 10px;
+}
+
+
+.biography__name h3 {
+    
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    letter-spacing: -0.4px;
+    color: #666D89;
+}
+
+.biography__description p {
+    margin-top: 8px;
+    display: inline-block;
+    font-family: Lato-Regular;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+    text-align: justify;
+    color: #767E9E;
+}
+
+
+.biography__socialnet {
+    margin-top: 27px;
+    margin-left: 0;
+    width: 155px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.socialnet_circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #666D89;
+    border-radius: 50%;
+}
+
+.socialnet_circle img {
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+    width: 14px;
+    height: 14px;
 }
 
 .about-us__bottom {
