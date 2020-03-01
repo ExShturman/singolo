@@ -86,6 +86,10 @@
     padding: 3px;
 }
 
+.portfolio__buttons .button_gray:hover {
+    background-color: wheat;
+}
+
 .portfolio__buttons .button_white {
     cursor: pointer;
     letter-spacing: 1px;
@@ -99,6 +103,10 @@
     border-color: white;
     text-align: center;
     padding: 4px;
+}
+
+.portfolio__buttons .button_white:hover {
+    background-color: wheat;
 }
 
 .imageboard {
@@ -149,16 +157,20 @@ section .about-us {
     font-size: 18px;
     line-height: 30px;
     color: #767E9E;
+    letter-spacing: -0.3px;
+    text-align: justify;
 }
 
 
 .biography {
     margin-top: 44px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    /* justify-content: space-between; */
     /* align-items: flex-start; */
     /* align-content: center; */
-    flex-wrap: wrap;
+   
 }
 
 
@@ -174,14 +186,13 @@ section .about-us {
 }
 
 .biography__name {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
 .biography__name h3 {
     
     font-family: Lato-Bold;
-    font-style: normal;
     font-weight: 900;
     font-size: 19px;
     letter-spacing: -0.4px;
@@ -191,8 +202,8 @@ section .about-us {
 .biography__description p {
     margin-top: 8px;
     display: inline-block;
-    font-family: Lato-Regular;
-    font-weight: 400;
+    font-family: Lato-Light;
+    font-weight: 300;
     font-size: 12px;
     line-height: 21px;
     letter-spacing: -0.2px;
@@ -202,7 +213,7 @@ section .about-us {
 
 
 .biography__socialnet {
-    margin-top: 27px;
+    margin-top: 24px;
     margin-left: 0;
     width: 155px;
     height: 35px;
