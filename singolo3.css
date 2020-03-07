@@ -6,32 +6,142 @@
     margin: 0 auto;
 }
 
-section .singolo3 {
+.singolo3 {
+    margin-top: 0px;
     width: 1020px;
+    /* height: 651px; */
     background-color: #F06C64;
 }
 
-.wrapper {
+.singolo3 .wrapper {
     width: 940px;
     margin-left: 40px;
     margin-right: 0 auto;
 }
 
-.singolo3 h2 {
-    font-family: "Lato-Black";
-    font-size: 26px;
-    font-weight: 300;
-    margin-top: 70px;
+.singolo3__quote {
+    /* display: block; */
 }
 
-.singolo3 p {
-    font-family: "Lato-Light";
+.singolo3__quote h2 {
+    display: inline-block;
+    font-family: "Lato-Black", sans-serif;
+    margin-top: 70px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.singolo3__quote p {
+    display: inline-block;
+    font-family: "Lato-Light", sans-serif;
     font-weight: 300;
     font-size: 18px;
     margin-top: 22px;
+    line-height: 18px;
 }
 
-.singolo3__bottom {
+/* Контейнер с формой */
+.singolo3__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    height: 431px;
+}
+
+
+
+/* Секция формы */
+.block__form {
+    display: flex;
+    /* justify-content: space-between;*/
+    /* align-items: center;  */
+    flex-direction: column;
+    width: 620px;
+
+}
+
+.form__input-text {
+    padding-left: 15px;
+    margin-bottom: 16px;
+    width: 620px;
+    height: 38px;
+    color: #f0d8d9;
+    font-family: "Lato-Light", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    background-color:#d6564f;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.input-text_textaria {
+    height: 202px;
+    padding-left: 15px;
+    color: #f0d8d9;
+    font-family: "Lato-Light", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    background-color:#d6564f;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.form_submit{
+    height: 38px;
+    width: 100px;
+    color: #f0d8d9;
+    font-family: "Lato-Light", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    background-color:#d6564f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Блок информации */
+.contact-information {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* justify-content: ;  */
+}
+
+.contact-information h3 {
+    font-family: "Lato-Bold";
+    font-weight: 900;
+    font-size: 18px;
+    /* line-height: 18px; */
+}
+
+.contact-information p {
+
+}
+
+.contact-information_contact-information {
+
+}
+
+
+
+.singolo3 .singolo3__bottom {
+    margin-top: 67px;
     height: 6px;
     background-color: #EA676B;
+}
+
+
+
+
+footer {
+    height: 76px;
+    background-color: #2D303A;
 }
