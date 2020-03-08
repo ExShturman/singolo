@@ -13,16 +13,8 @@ body {
 .wrapper {
     width: 940px;
     margin-left: 40px;
-    /* max-width: 1020px; */
-    /* overflow: hidden */
+    height: 100%;
 }
-
-/* .wrapper:after {
-	content: " ";
-	display: table;
-	clear: both;
-} */
-
 
 .header {
     display: flex;
@@ -34,15 +26,12 @@ body {
 
 
 .logo {
+    display: inline-block;
     cursor: pointer;
-    /* display: inline-block; */
-    /* position: absolute; */
     font-size: 25px;
     color: white;
     font-family: "Lato-Bold", sans-serif;
-    /* font-weight: 700; */
-    /* margin-left: 40px;
-    margin-top: 30px;  */
+
 }
 
 .logo::after {
@@ -53,14 +42,20 @@ body {
 
 .header__nav {
     cursor: pointer;
-    display: flex;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 9pt;
+    font-size: 12px;
     font-family: "Lato-Bold", sans-serif;
     text-transform: uppercase;
     /* margin-left: 609px;    
     margin-top: 42px; */
 }
+
+/* ul {
+    display: inline-block;
+} */
 
 li {
     display: inline;
@@ -87,45 +82,49 @@ li:hover {
 }
 
 
-.slider-arrow-left img {
+.slider_arrow-left {
     cursor: pointer;
-    /* position: absolute; */
+    position: absolute;
     width: 16px;
     height: 27px;
-    margin-left: 43px;
+    /* margin-left: 1px; */
+    margin-top: 281px;
+
+
+}
+
+.slider_arrow-right {
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    margin-left: 925px;
     margin-top: 281px;
 }
 
 
-.slider-arrow-right img {
+.slider_iphone-vertical {
     cursor: pointer;
-    /* position: absolute; */
-    width: 16px;
-    height: 27px;
-    margin-left: 965px;
-    margin-top: 281px;
-}
-
-
-.slider-iphone-vertical img {
-    /* position: absolute; */
-    margin-left: 112px;
+    position: absolute;
+    margin-left: 72px;
     margin-top: 53px;
     height: 483px;
     width: 240px;
 }
 
 
-.slider-iphone-horizontal img {
-    /* position: absolute; */
+.slider_iphone-horizontal {
+    cursor: pointer;
+    position: absolute;
     width: 484px;
     height: 240px;
-    margin-left: 425px;
+    margin-left: 385px;
     margin-top: 174px;
 }
 
 
-.slider-bottom {
+
+.slider_bottom {
     background-color: #EA676B;
     height: 6px;
 }
