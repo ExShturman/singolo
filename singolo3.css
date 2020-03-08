@@ -57,10 +57,8 @@
     margin-left: 0px;
     margin-right: 0px;
     /* justify-content: space-between;*/
-    /* align-items: center;  */
     flex-direction: column;
     width: 620px;
-
 }
 
 .form__input-text {
@@ -87,12 +85,13 @@
 
 }
 
-.form_submit{
+.form_submit {
+    margin-left: 0px;
     height: 38px;
     width: 100px;
     color: #f0d8d9;
     font-family: "Lato-Light", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     border: none;
     background-color:#d6564f;
@@ -141,23 +140,33 @@
 
 .contact-information_address {
     margin-top: 39px;
+    display: block;
+
 
 }
 
-/* Для вставки иконки */
+ /* Для вставки иконки */
 .contact-information_address::before {
-    background-image: url(./assets/);
-    
-}
+    display: block;
+    /* position: absolute; */
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("./assets/singolo3/img/location-ico.svg");
+    background-size: 7px;
+    background-repeat: no-repeat;
+
+} 
 
 .contact-information_phone {
     margin-top: 10px;
+}
 
+.contact-information_phone::before {
+    background-image: url("./assets/singolo3/img/phone-ico.svg");
 }
 
 .contact-information_email {
     margin-top: 10px;
-
 }
 
 
@@ -173,9 +182,54 @@
 }
 
 
-
-
 footer {
     height: 76px;
     background-color: #2D303A;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.copyright {
+    display: inline-block;
+    /* margin-left: 0px;
+    margin-top: 33px; */
+    font-family: "Lato-Regular";
+    color: #666d89;
+    font-size: 12px;
+}
+
+.footer__socialnet {
+    /* margin-top: 24px;
+    margin-left: 0; */
+    width: 152px;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.socialnet_circle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #666D89;
+    border-radius: 50%;
+}
+
+.socialnet_circle img {
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+    width: 16px;
+    height: 16px;
 }
