@@ -87,10 +87,7 @@ li:hover {
     position: absolute;
     width: 16px;
     height: 27px;
-    /* margin-left: 1px; */
     margin-top: 281px;
-
-
 }
 
 .slider_arrow-right {
@@ -143,48 +140,50 @@ li:hover {
 
 .services-text h1 {
     display: inline-block;
-    margin-left: 42px;
     margin-top: 60px;
     font-family: "Lato-Black";
-    /* font-style: normal;
-    font-weight: 900; */
     font-size: 30px;
-    color: #666D89;
+    color: #666D89; 
 }
 
 .services-text p {
     display: inline-block;
-    margin-top: 19px;
-    margin-left: 40px;
-    margin-right: 11px;
+    margin-top: 17px;
     font-family: "Lato-Light";
-    /* font-style: normal;
-    font-weight: 300; */
     font-size: 18px;
     line-height: 30px;
     color: #767E9E;
+    letter-spacing: -0.1px;
 }
 
 
 .box-container {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 19px;
+    row-gap: 38px;
+    justify-content: space-between;
     margin-top: 44px;
-    margin-left: 22px;
 }
 
 
-.box {
-    vertical-align: top;
-    display: inline-block;
-    float: left;
+box-container__box {
+    /* display: flex;
+    justify-content: space-between; */
+    /* vertical-align: top; */
     width: 300px;
-    max-height: 87px;
-    margin-left: 19px;
-    margin-bottom: 37px;
+    height: 87px;
+    /* margin-left: 19px;
+    margin-bottom: 37px; */
+}
+box-container__box  img {
+float: right;
+position: relative;
+margin-top: 0px;
 }
 
-
-.box-ico {
+/* .box__circle {
     display: inline-block;
     width: 61px;
     height: 61px;
@@ -195,20 +194,20 @@ li:hover {
     z-index: 5; 
     margin-left: 0px;
     margin-top: 0px;
-    float: left;
-}
+} */
 
 
-.box-ico .box-img {
+box-container__box img {
+    /* top: 0px; */
     /* display: inline; 
     position: absolute; */
     /* width: 32px;
     height: 32px; */
     /* margin-left: 18px;*/
-    display: inline-block;
-    margin-top: 25%; 
-    margin-left: 25%;
-    z-index: 10;
+    /* display: inline-block; */
+    /* margin-top: 25%; 
+    margin-left: 25%; */
+    /* z-index: 10; */
     
 }
 
