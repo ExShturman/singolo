@@ -14,18 +14,14 @@
 .singolo3 .wrapper {
     width: 940px;
     margin-left: 40px;
-    /* margin-right: 0 auto; */
 }
 
 .singolo3__quote {
     color: #F0D8D9;
-    /* display: block; */
 }
 
 .singolo3__quote h2 {
     display: inline-block;
-    /* width: 160px; */
-    /* text-align: justify; */
     font-family: "Lato-Black", sans-serif;
     margin-top: 60px;
     font-size: 30px;
@@ -35,7 +31,6 @@
     display: inline-block;
     font-family: "Lato-Light", sans-serif;
     text-align: justify;
-    /* font-weight: 300; */
     font-size: 18px;
     margin-top: 17px;
     line-height: 30px;
