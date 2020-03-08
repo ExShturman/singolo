@@ -7,26 +7,27 @@
 }
 
 .singolo3 {
-    margin-top: 0px;
     width: 1020px;
-    /* height: 651px; */
     background-color: #F06C64;
 }
 
 .singolo3 .wrapper {
     width: 940px;
     margin-left: 40px;
-    margin-right: 0 auto;
+    /* margin-right: 0 auto; */
 }
 
 .singolo3__quote {
+    color: #F0D8D9;
     /* display: block; */
 }
 
 .singolo3__quote h2 {
     display: inline-block;
+    width: 160px;
+    text-align: justify;
     font-family: "Lato-Black", sans-serif;
-    margin-top: 70px;
+    margin-top: 65px;
     font-size: 26px;
     font-weight: 300;
 }
@@ -37,7 +38,7 @@
     font-weight: 300;
     font-size: 18px;
     margin-top: 22px;
-    line-height: 18px;
+    line-height: 30px;
 }
 
 /* Контейнер с формой */
@@ -53,6 +54,8 @@
 /* Секция формы */
 .block__form {
     display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
     /* justify-content: space-between;*/
     /* align-items: center;  */
     flex-direction: column;
@@ -77,18 +80,11 @@
 }
 
 
-.input-text_textaria {
+.input-text_textarea {
+    padding-top: 14px;
     height: 202px;
-    padding-left: 15px;
-    color: #f0d8d9;
-    font-family: "Lato-Light", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    border: none;
-    background-color:#d6564f;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
+    resize: none;
+
 }
 
 .form_submit{
@@ -109,26 +105,64 @@
 /* Блок информации */
 .contact-information {
     width: 300px;
-    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #f0d8d9
+    /* display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: baseline; */
     /* justify-content: ;  */
 }
 
 .contact-information h3 {
-    font-family: "Lato-Bold";
-    font-weight: 900;
+    font-family: "Lato-Black", sans-serif;
     font-size: 18px;
+    /* font-weight: 900; */
+    
+    /* color: #f0d8d9; */
     /* line-height: 18px; */
 }
 
 .contact-information p {
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.contact-information a {
+    display: block;
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 12px;
+    padding-left: 23px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-information_address {
+    margin-top: 39px;
 
 }
 
-.contact-information_contact-information {
+/* Для вставки иконки */
+.contact-information_address::before {
+    background-image: url(./assets/);
+    
+}
+
+.contact-information_phone {
+    margin-top: 10px;
 
 }
+
+.contact-information_email {
+    margin-top: 10px;
+
+}
+
+
+
+
 
 
 
