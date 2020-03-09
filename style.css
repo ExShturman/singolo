@@ -17,22 +17,34 @@ body {
 }
 
 .header {
+    height: 95px;
+    background-color: #2d303a;
+    border-bottom: #323746 6px solid;
+}
+
+.header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 89px;
-    background-color: #2d303a;
 }
 
 
 .logo {
-    display: inline-block;
+    text-align: left;
+    margin: 0px;
+    /* margin-left: 0px; */
     cursor: pointer;
     font-size: 25px;
     color: white;
     font-family: "Lato-Bold", sans-serif;
-
 }
+
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 .logo::after {
     content: "*";
@@ -40,45 +52,62 @@ body {
     font: inherit;
 }
 
+
+nav {
+     margin: 0px;  /* Обнуление отступов */
+}
+
+
 .header__nav {
-    cursor: pointer;
-    display: flexbox;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    font-family: "Lato-Black", sans-serif;
+    padding: 0;
+    display: flex;
+    padding-top: 11px;
     font-size: 12px;
-    font-family: "Lato-Bold", sans-serif;
+    line-height: 12px;
+    list-style: none;
+}
+
+
+.header__nav_element {
+    position: relative;
+    height: 30px;
+    margin-left: 28px;
+    margin-top: 18px;
+    color: white;
+}
+
+
+.header__nav_element a {
+    color: inherit;
+    text-decoration: none;
     text-transform: uppercase;
-    /* margin-left: 609px;    
-    margin-top: 42px; */
 }
 
-/* ul {
-    display: inline-block;
-} */
 
-li {
-    display: inline;
-    padding-right: 27px;
+.header__nav li:not(:first-child)::before {
+    position: absolute;
+    left: -17px;
+    color: #4f6249;
+    content: "\2022";
+    font-size: 7px;
 }
 
-li:first-child {
+
+.header__nav li:first-child {
     color: red;
 }
 
-li:hover {
-    color: green;
-}
 
-.header-bottom {
-    height: 6px;
-    background-color: #323746;
+.header__nav li:hover {
+    color: yellow;
 }
 
 
 .slider {
-    height: 594px;
+    height: 600px;
     background-color: #f06c64;
+    border-bottom: #EA676B 6px solid;
 }
 
 
@@ -120,25 +149,19 @@ li:hover {
 }
 
 
-
-.slider_bottom {
-    background-color: #EA676B;
-    height: 6px;
-}
-
-
 .services {
-    min-height: 494px;
+    min-height: 500px;
     background-color: #F2F2F2;
+    border-bottom: white 6px solid;
 }
 
 
-.services-text {
+.services__text {
     display: block;
 }
 
 
-.services-text h1 {
+.services__text h1 {
     display: inline-block;
     margin-top: 60px;
     font-family: "Lato-Black";
@@ -146,7 +169,7 @@ li:hover {
     color: #666D89; 
 }
 
-.services-text p {
+.services__text p {
     display: inline-block;
     margin-top: 17px;
     font-family: "Lato-Light";
@@ -157,30 +180,32 @@ li:hover {
 }
 
 
-.box-container {
+.box_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 19px;
     row-gap: 38px;
     justify-content: space-between;
-    margin-top: 44px;
+    margin-top: 47px;
 }
 
 
-box-container__box {
+.box_container__box {
     /* display: flex;
     justify-content: space-between; */
-    /* vertical-align: top; */
+    vertical-align: top;
     width: 300px;
     height: 87px;
+    overflow: hidden;
     /* margin-left: 19px;
     margin-bottom: 37px; */
 }
-box-container__box  img {
-float: right;
-position: relative;
-margin-top: 0px;
+
+.box_container__box  img {
+    float: left;
+    /* position: relative; */
+    /* margin-top: 0px; */
 }
 
 /* .box__circle {
@@ -196,52 +221,35 @@ margin-top: 0px;
     margin-top: 0px;
 } */
 
-
-box-container__box img {
-    /* top: 0px; */
-    /* display: inline; 
-    position: absolute; */
-    /* width: 32px;
-    height: 32px; */
-    /* margin-left: 18px;*/
-    /* display: inline-block; */
-    /* margin-top: 25%; 
-    margin-left: 25%; */
-    /* z-index: 10; */
-    
-}
-
-
-.box-text {
+.box_container__box-text {
     display: inline-block;
     width: 218px;
-    margin-left: 18px;
+    margin-left: 20px;
 }
 
 
-.box-text h2 {
+.box_container__box-text h2 {
     font-size: 18px;
     color: #666d89;
     font-family: "Lato-Black";
-    /* font-weight: 900; */
-    line-height: 30px;
-    margin-top: -7px;
-    margin-bottom: 4px;
+    margin-top: -3px;
+    /* margin-bottom: 4px; */
 }
 
 
-.box-text p {
+.box_container__box-text p {
+    margin-top: 8px;
     color: #767e9e;
     font-family: "Lato-Regular";
     font-size: 12px;
-    line-height: 21px;
-    max-height: 136px;
+    line-height: 22px;
+    /* max-height: 65px; */
     overflow: hidden;
     text-align: justify;
 }
 
 
-.box-bottom {
+/* .box-bottom {
     background-color: white;
     height: 6px;
-}
+} */
