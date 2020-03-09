@@ -179,47 +179,30 @@ nav {
     letter-spacing: -0.1px;
 }
 
-
+/* Сетка с блоками */
 .box_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 19px;
-    row-gap: 38px;
+    row-gap: 36px;
     justify-content: space-between;
     margin-top: 47px;
 }
 
 
 .box_container__box {
-    /* display: flex;
-    justify-content: space-between; */
     vertical-align: top;
     width: 300px;
     height: 87px;
     overflow: hidden;
-    /* margin-left: 19px;
-    margin-bottom: 37px; */
 }
 
 .box_container__box  img {
     float: left;
-    /* position: relative; */
-    /* margin-top: 0px; */
+
 }
 
-/* .box__circle {
-    display: inline-block;
-    width: 61px;
-    height: 61px;
-    border-color: #666d89;
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 2px;
-    z-index: 5; 
-    margin-left: 0px;
-    margin-top: 0px;
-} */
 
 .box_container__box-text {
     display: inline-block;
@@ -232,8 +215,7 @@ nav {
     font-size: 18px;
     color: #666d89;
     font-family: "Lato-Black";
-    margin-top: -3px;
-    /* margin-bottom: 4px; */
+    margin-top: -4px;
 }
 
 
@@ -243,13 +225,6 @@ nav {
     font-family: "Lato-Regular";
     font-size: 12px;
     line-height: 22px;
-    /* max-height: 65px; */
     overflow: hidden;
     text-align: justify;
 }
-
-
-/* .box-bottom {
-    background-color: white;
-    height: 6px;
-} */
