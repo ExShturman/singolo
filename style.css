@@ -233,8 +233,9 @@ nav {
 /* Стили singolo2 */
 
 .singolo2 .portfolio {
-    height: 864px;
+    height: 870px;
     background: #2D303A;
+    border-bottom: #323746 6px solid;
 }
 
 .promo {
@@ -322,14 +323,10 @@ nav {
 }
 
 
-.portfolio_bottom {
-    height: 6px;
-    background: #323746;
-}
-
 section .about-us {
-    height: 728px;
+    height: 734px;
     background-color: #f2f2f2;
+    border-bottom: white 6px solid;
 }
 
 .about-us__description h2 {
